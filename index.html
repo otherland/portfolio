@@ -1,0 +1,322 @@
+<html><head>
+
+  <link target="_blank" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
+  <link target="_blank" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="//use.typekit.net/mnz5mvf.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<style>
+.header{
+  /*background-image: url('back.png');*/
+  background-repeat: no-repeat;
+  background-size: 53%;
+  background-position: 50% -10%;
+  padding-left: 0;
+  padding-right: 0  ;}
+
+.page .mobile-nav a {
+  display: inline-block;
+  text-align: center;
+
+  margin: 0 25px 25px 0;
+  color: black;
+}
+
+.page .mobile-nav span {
+  line-height: 40px;
+  font-size: 20px;
+}
+
+.page .mobile-nav a i {
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  border-radius: 32px;
+  width: 75px;
+  height: 59px;
+  padding-top: 16px;
+  color: #414141;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.page .mobile-nav a:hover i,
+.page .mobile-nav a:focus i {
+  color: #00a5ff;
+}
+
+.smiley{display:inline-block;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}
+
+.header:hover .smiley{transform-origin:66% 69%;transform:rotate(90deg) translateY(0%)}
+
+body {font-family:'Open Sans';
+text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+overflow: hidden;
+
+background: none repeat scroll 0% 0% #E8EDF0;
+  background-color: #E8EDF0;
+  background-image: none;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: auto auto;
+}
+
+
+a{text-decoration:none}
+
+
+.content{position: relative; margin:0px auto;width:860px}
+.intro{border-bottom:1px solid rgba(0, 0, 0, 0.1);margin-bottom:60px;margin-top:10%;padding-bottom:30px;text-align:center;z-index:1}
+.intro h1{font-size:76px;font-weight:bold;font-family: helvetica neue, helvetica, arial;}
+.intro p{font-size:28px}
+
+/*
+==============================================
+bounce
+==============================================
+*/
+
+
+.bounce:hover{
+  animation-name: bounce;
+  -webkit-animation-name: bounce;
+
+  animation-duration: 1.6s;
+  -webkit-animation-duration: 1.6s;
+
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+
+  transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%) scaleY(0.6);
+  }
+  60%{
+    transform: translateY(-100%) scaleY(1.1);
+  }
+  70%{
+    transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80%{
+    transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90%{
+    transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100%{
+    transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0%) scaleY(0.6);
+  }
+  60%{
+    -webkit-transform: translateY(-100%) scaleY(1.1);
+  }
+  70%{
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1.05);
+  }
+  80%{
+    -webkit-transform: translateY(0%) scaleY(1.05) scaleX(1);
+  }
+  90%{
+    -webkit-transform: translateY(0%) scaleY(0.95) scaleX(1);
+  }
+  100%{
+    -webkit-transform: translateY(0%) scaleY(1) scaleX(1);
+  }
+}
+
+
+/*
+==============================================
+floating
+==============================================
+*/
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(8%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/*
+==============================================
+pulse
+==============================================
+*/
+
+.pulse:hover{
+  animation-name: pulse;
+  -webkit-animation-name: pulse;
+
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+.pulseBig {
+  cursor: pointer;
+}
+.pulseBig:hover{
+  animation-name: pulseBig;
+  -webkit-animation-name: pulseBig;
+
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+.pulseBig:hover i {
+  color: pink !important;
+}
+@keyframes pulseBig {
+  0% {
+    transform: scale(2);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0.7;
+  }
+}
+
+@-webkit-keyframes pulseBig {
+  0% {
+    -webkit-transform: scale(2);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+    opacity: 0.7;
+  }
+}
+
+</style>
+
+<body>
+
+
+
+<div class="color-overlay">
+    <div class="content">
+      <div class="intro header" id="intro">
+        <h1 class="floating">Hey, I'm Tom <span class="smiley">:)</span></h1>
+        <p class="">
+          I teach the <a href="" style="text-decoration: underline;color: #5498ff;">Alexander Technique</a>.
+        </p>
+        <!--p>I design and develop experiences that bring happiness to people's lives.
+        </p-->
+
+        <div class="page">
+          <section class="mobile-nav fade-in three">
+              <a class="pulse" target="_blank" href="mailto:twittomyates@gmail.com">
+                  <i class="fa fa-3x fa-envelope"></i>
+                  <span>Email</span>
+              </a>
+              <a class="pulse" target="_blank" href="/writing">
+                  <i class="fa fa-3x fa-calendar"></i>
+                  <span>Booking</span>
+              </a>
+              <a class="pulse" target="_blank" href="/writing">
+                  <i class="fa fa-3x fa-book"></i>
+                  <span>Blog</span>
+              </a>
+              <a class="pulse" target="_blank" href="/projects">
+                  <i class="fa fa-3x fa-cube"></i>
+                  <span>Projects</span>
+              </a>
+              <a class="pulse" target="_blank" href="">
+                  <i class="fa fa-3x fa-btc"></i>
+                  <span>Donate</span>
+              </a>
+              <a class="pulseBig" target="_blank" id="love_button">
+                  <i class="fa fa-3x fa-heart"></i>
+                  <span>Love</span>
+              </a>
+          </section>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body></html>
